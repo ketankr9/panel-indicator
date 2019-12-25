@@ -1,11 +1,20 @@
-## Ubuntu Panel Indicator  
+### Author: Utsav Krishnan (ketankr9@gmail.com) ###
+
+### Bare minimum script ###
+# from panel_indicator import PanelIndicator
+#
+# class MyIndicator(PanelIndicator):
+#     def __init__(self, update_interval):
+#         PanelIndicator.__init__(self, update_interval)
+#
+#     # runs after every 1 seconds
+#     def set_new_value(self):
+#         return "yayy"
+#
+# MyIndicator(1)
 
 
-This library can be used to print the output of any script in the ubuntu unity panel.  
-
-An example of internet donwload speed unity panel indicator built using this package.  
-![Picture](internetSpeedIndicator.png)  
-```
+### Script for showing internet speed ###
 from panel_indicator import PanelIndicator
 import subprocess
 
@@ -38,18 +47,3 @@ class MyIndicator(PanelIndicator):
         return val
 
 MyIndicator(1.5)
-```  
->Skeleton:
-```
-from panel_indicator import PanelIndicator
-
-class MyIndicator(PanelIndicator):
-    def __init__(self, update_interval):
-        PanelIndicator.__init__(self, update_interval)
-
-    # runs after every 1 seconds
-    def set_new_value(self):
-        return "yayy"
-
-MyIndicator(1)
-```
